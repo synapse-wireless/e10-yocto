@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <default remote="synapse" revision="default" />
+
+    <!-- remote repo definitions -->
+    <remote name="synapse" fetch="git@git.synapse-wireless.com:octo" />
+    <remote name="yocto" fetch="git://git.yoctoproject.org" />
+    <remote name="oe" fetch="git://git.openembedded.git" />
+    <remote name="qt5" fetch="git://github.com/meta-qt5" />
+    <remote name="atmel" fetch="git://github.com/linux4sam" />
+
+    <!-- list of repos we want fetched -->
+    <!--
+         "name": git repo name on the hosting server
+         "remote": the remote host above (if not the default)
+         "revision": commitish to checkout (if not the default)
+         "path": directory where git repo gets cloned to
+    -->
+    <project name="poky" remote="yocto" revision="refs/heads/dizzy" />
+    <project name="meta-openembedded" remote="oe"
+        path="poky/meta-openembedded" revision="refs/heads/dizzy" />
+    <project name="meta-qt5" remote="qt5" path="poky/meta-qt5"
+        revision="refs/heads/dizzy" />
+    <project name="meta-atmel" remote="atmel" path="poky/meta-atmel"
+        revision="refs/heads/dizzy" />
+    <project name="meta-synapse" remote="synapse" path="poky/meta-synapse"
+        revision="refs/heads/master" />
+
+</manifest>
