@@ -23,7 +23,7 @@
         revision="refs/heads/dizzy" />
     <project name="meta-atmel" remote="atmel" path="poky/meta-atmel"
         revision="refs/heads/dizzy" />
-    <project name="meta-synapse" remote="synapse" path="poky/meta-synapse"
+    <project name="meta-synapse.git" remote="synapse" path="poky/meta-synapse"
         revision="refs/heads/master" />
 
 </manifest>
