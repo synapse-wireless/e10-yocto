@@ -5,7 +5,7 @@
     <!-- remote repo definitions -->
     <remote name="synapse" fetch="git@git.synapse-wireless.com:octo" />
     <remote name="yocto" fetch="git://git.yoctoproject.org" />
-    <remote name="oe" fetch="git://git.openembedded.git" />
+    <remote name="oe" fetch="git://git.openembedded.org" />
     <remote name="qt5" fetch="git://github.com/meta-qt5" />
     <remote name="atmel" fetch="git://github.com/linux4sam" />
 
