@@ -3,7 +3,7 @@
     <default remote="synapse" revision="default" />
 
     <!-- remote repo definitions -->
-    <remote name="synapse" fetch="git@git.synapse-wireless.com:octo" />
+    <remote name="synapse" fetch="https://git.synapse-wireless.com/octo" />
     <remote name="yocto" fetch="git://git.yoctoproject.org" />
     <remote name="oe" fetch="git://git.openembedded.org" />
     <remote name="qt5" fetch="git://github.com/meta-qt5" />
