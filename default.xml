@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <notice>
+        Done syncing. If this is your first time run the following:
+
+        export TEMPLATECONF=meta-synapse/conf
+        source poky/oe-init-build-env build-atmel
+    </notice>
 
     <!-- remote repo definitions -->
     <remote name="synapse" fetch="ssh://git@git.synapse-wireless.com/octo" />
