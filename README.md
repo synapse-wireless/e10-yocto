@@ -39,6 +39,22 @@ To setup your repo initially:
 
     $ repo init -u git@git.synapse-wireless.com:octo/e10-yocto.git
 
-Pull down the latest repos:
+Change branches:
+
+    $ repo init -b something_other_than_master
+
+**3. Pull down the latest repos**
+
+Updates all local repos to the branch you have selected:
 
     $ repo sync
+
+**4. Initialize Yocto**
+
+    $ export TEMPLATECONF=meta-synapse/conf
+    $ source poky/oe-init-build-env build-atmel
+
+**5. Build images**
+
+    $ bitbake synapse-image-e10-rescue
+    $ bitbake synapse-image-e10-ota
