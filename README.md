@@ -52,7 +52,7 @@ Updates all local repos to the branch you have selected:
 **4. Initialize Yocto**
 
     $ export TEMPLATECONF=meta-synapse/conf
-    $ source poky/oe-init-build-env build-atmel
+    $ source poky/oe-init-build-env
 
 **5. Build images**
 

@@ -4,7 +4,7 @@
         Done syncing. If this is your first time run the following:
 
         export TEMPLATECONF=meta-synapse/conf
-        source poky/oe-init-build-env build-atmel
+        source poky/oe-init-build-env
     </notice>
 
     <!-- remote repo definitions -->
