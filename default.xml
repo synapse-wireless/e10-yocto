@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <default remote="synapse" revision="default" />
 
     <!-- remote repo definitions -->
     <remote name="synapse" fetch="ssh://git@git.synapse-wireless.com/octo" />
