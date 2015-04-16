@@ -4,7 +4,7 @@ E10 Repo Manifest for Yocto Project Build System
 This repo provides Repo manifest to setup the Yocto build system for the E10.
 
 Note: If you just want the Synapse layer it is available at:
-https://git.synapse-wireless.com/octo/meta-synapse
+https://github.com/synapse-wireless/meta-synapse
 
 Getting Started
 ---------------
