@@ -37,7 +37,7 @@ Create an empty directory:
 
 To setup your repo initially:
 
-    $ repo init -u git@git.synapse-wireless.com:octo/e10-yocto.git
+    $ repo init -u git://github.com/synapse-wireless/e10-yocto.git
 
 Change branches:
 
