@@ -23,7 +23,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # grab repo data
-repo init -u . || die "unable to repo init"
+repo init -u . -b ${VER_BRANCH} || die "unable to repo init"
 
 # pull down repos
 repo sync || die "unable to repo sync"
