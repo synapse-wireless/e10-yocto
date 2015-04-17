@@ -22,6 +22,8 @@ if [ $? -ne 0 ]; then
     chmod +x ${HOME}/.bin/repo
 fi
 
+echo "${GIT_COMMIT}" > .git/refs/heads/${VER_BRANCH}
+
 # grab repo data
 repo init -u . -b ${VER_BRANCH} || die "unable to repo init"
 
