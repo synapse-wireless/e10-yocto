@@ -39,7 +39,7 @@ source poky/oe-init-build-env
 
 # build our images
 bitbake synapse-image-e10-rescue || die "unable to build rescue image"
-bitbake-synapse-image-e10-ota || die "unable to build ota image"
+bitbake synapse-image-e10-ota || die "unable to build ota image"
 
 # build extra packages
 bitbake \
