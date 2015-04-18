@@ -22,6 +22,9 @@ if [ $? -ne 0 ]; then
     chmod +x ${HOME}/.bin/repo
 fi
 
+if [ -z "${GIT_COMMIT}" ]; then
+	GIT_COMMIT=$(git rev-parse HEAD)
+fi
 echo "${GIT_COMMIT}" > .git/refs/heads/${VER_BRANCH}
 
 # grab repo data
