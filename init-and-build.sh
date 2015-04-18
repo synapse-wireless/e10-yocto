@@ -56,6 +56,8 @@ bitbake \
 	nano \
 	openvpn \
 	python-pytz \
+	screen \
+	ruby \
 	|| die "unable to build extra packages"
 
 # build package index
