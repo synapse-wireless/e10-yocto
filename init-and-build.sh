@@ -6,9 +6,11 @@ die() {
 }
 
 [ -z "${GIT_BRANCH}" ] && die "You must specify GIT_BRANCH"
-VER_BRANCH=${GIT_BRANCH##*/}
+BUILD_BRANCH=${GIT_BRANCH##*/}
+BUILD_VERSION=${GIT_BRANCH##*/v}
 
-[ "x${VER_BRANCH}" = "xmaster" ] && die "We do not build master"
+[ "x${BUILD_BRANCH}" = "xmaster" ] && die "We do not build master"
+[ "x${BUILD_VERSION}" = "x${GIT_BRANCH}" ] && die "bad branch name"
 
 # add $HOME/.bin to our PATH
 export PATH=$HOME/.bin:$PATH
@@ -25,10 +27,10 @@ fi
 if [ -z "${GIT_COMMIT}" ]; then
 	GIT_COMMIT=$(git rev-parse HEAD)
 fi
-echo "${GIT_COMMIT}" > .git/refs/heads/${VER_BRANCH}
+echo "${GIT_COMMIT}" > .git/refs/heads/${BUILD_BRANCH}
 
 # grab repo data
-repo init -u . -b ${VER_BRANCH} || die "unable to repo init"
+repo init -u . -b ${BUILD_BRANCH} || die "unable to repo init"
 
 # pull down repos
 repo sync || die "unable to repo sync"
@@ -61,6 +63,7 @@ bitbake package-index || die "unable to generate package index"
 
 # rsync packages
 rsync -avH tmp/deploy/ipk/{all,armv5te,at91sam9x5ek} \
-	jenkins@artifactory.synapse-wireless.com:e10/${VER_BRANCH}/ || die "unable to rsync"
+	jenkins@artifactory.synapse-wireless.com:e10/${BUILD_VERSION}/ \
+	|| die "unable to rsync"
 
 exit 0
