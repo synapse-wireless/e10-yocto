@@ -58,6 +58,15 @@ bitbake \
 	python-pytz \
 	screen \
 	ruby \
+	rsync \
+	file \
+	usbutils \
+	socat \
+	bzip2 \
+	cronie \
+	wpa-supplicant \
+	ppp \
+	rp-pppoe \
 	|| die "unable to build extra packages"
 
 # build package index
