@@ -31,6 +31,6 @@
     <project name="meta-atmel" remote="atmel" path="poky/meta-atmel"
         revision="2aefe6c849c17a8fd58ac3fac415417d2425863c" />
     <project name="meta-synapse" remote="synapse" path="poky/meta-synapse"
-        revision="refs/heads/master" />
+        revision="58f0279d48c1407872e76c3dfd0d0bb59da3f789" />
 
 </manifest>
