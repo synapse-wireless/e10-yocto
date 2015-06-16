@@ -54,6 +54,7 @@ bitbake \
 	net-tools \
 	iputils \
 	nano \
+	micro-emacs \
 	openvpn \
 	python-pytz \
 	screen \
