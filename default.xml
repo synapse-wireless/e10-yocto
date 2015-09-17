@@ -22,6 +22,7 @@
          "path": directory where git repo gets cloned to
     -->
     <project name="poky" remote="yocto" revision="refs/heads/dizzy" />
+    <project name="meta-cloud-services" remote="yocto" path="poky/meta-cloud-services" revision="refs/heads/dizzy-juno" />
     <project name="meta-openembedded" remote="oe"
         path="poky/meta-openembedded" revision="refs/heads/dizzy" />
     <project name="meta-qt5" remote="qt5" path="poky/meta-qt5"

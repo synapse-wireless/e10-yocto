@@ -50,6 +50,7 @@ bitbake \
 	zeromq \
 	python-pip \
 	python-tornado \
+	python-pycrypto \
 	iproute2 \
 	net-tools \
 	iputils \
