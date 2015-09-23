@@ -51,6 +51,7 @@ bitbake \
 	python-pip \
 	python-tornado \
 	python-pycrypto \
+	python-pyzmq \
 	iproute2 \
 	net-tools \
 	iputils \
