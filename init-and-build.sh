@@ -55,6 +55,7 @@ bitbake \
 	iproute2 \
 	net-tools \
 	iputils \
+	iptables \
 	nano \
 	micro-emacs \
 	monit \
