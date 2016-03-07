@@ -24,7 +24,7 @@
     <project name="poky" remote="yocto"
         revision="0143d3a6a9dc263f90b7e19a3f8d6b9a49831361" />
     <project name="meta-cloud-services" remote="yocto" 
-        path="poky/meta-cloud-services" revision="refs/heads/dizzy-juno" />        
+        path="poky/meta-cloud-services" revision="8043269f64fea96af0450f018fde4544904938bd" />        
     <project name="meta-openembedded" remote="oe"
         path="poky/meta-openembedded"
         revision="2ebb8752f378c9987b0ece5a14915d703b872c1d" />
@@ -33,6 +33,6 @@
     <project name="meta-atmel" remote="atmel" path="poky/meta-atmel"
         revision="2aefe6c849c17a8fd58ac3fac415417d2425863c" />
     <project name="meta-synapse" remote="synapse" path="poky/meta-synapse"
-        revision="refs/heads/master" />
+        revision="v2.1" />
 
 </manifest>
