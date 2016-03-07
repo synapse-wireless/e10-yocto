@@ -33,6 +33,6 @@
     <project name="meta-atmel" remote="atmel" path="poky/meta-atmel"
         revision="2aefe6c849c17a8fd58ac3fac415417d2425863c" />
     <project name="meta-synapse" remote="synapse" path="poky/meta-synapse"
-        revision="tags/v2.1" />
+        revision="refs/tags/v2.1" />
 
 </manifest>
